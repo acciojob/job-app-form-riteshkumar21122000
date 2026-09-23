@@ -9,64 +9,42 @@
 
 <body>
     <!-- the entire body must be written by student -->
-
-    <h1>Job Application Form</h1>
-
-    <form method="post">
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" required />
-
-        <br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" required />
-
-        <br>
-
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="Male" required />
-        <label for="male">Male</label>
-
-        <input type="radio" id="female" name="gender" value="Female" />
-        <label for="female">Female</label>
-
-        <br>
-        <label>
-            Laptop Brand:
-            <select id="laptop">
-                <option value="Apple">Apple</option>
-                <option value="Asus">Asus</option>
-                <option value="HP">HP</option>
-            </select>
-        </label>
-
-        <br>
-
-        <label for="age">Age:</label>
-        <input type="number" id="age" required />
-
-        <br>
-
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" required />
-
-        <br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" required />
-
-        <br>
-
-        <label for="portfolio">Portfolio URL:</label>
-        <input type="url" id="portfolio" required />
-
-        <br>
-
-        <button type="submit">Submit</button>
-
-    </form>
-
+<h1>Job Application Form</h1>
+<form method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="name">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="email">
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age">
+    <br>
+    <label for="dob">Date of Birth:</label>
+    <input type="dob" id="dob"/>
+    <br>
+    <label for="gender">Gender:</label>
+    <br>
+    <input type="radio" value="male" name="gender" /> Male
+    <br>
+    <input type="radio" value="female" name="gender" /> Female
+    <br>
+    <label for="laptop">Laptop Brands:
+     <select name="laptop" id="laptop">
+        <option value="Apple">Apple</option>
+        <option value="Asus">Asus</option>
+        <option value="HP">HP</option>
+     </select>
+    </label>
+    <br>
+    <label for="url">Portfolio URL:</label>
+    <input type="url" id="portfolio">
+    <br>
+    <button type="button">Submit</button>
+</form>
 
     <script type="text/javascript" src="./script.js">
     </script>
